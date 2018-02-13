@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rango',
 ]
 
+LOGIN_URL = '/rango/login'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -123,7 +125,7 @@ USE_TZ = True
 
 STATIC_PATH = os.path.join(BASE_DIR,'static')
 
-STATIC_URL = '/static/' 
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     STATIC_PATH,
